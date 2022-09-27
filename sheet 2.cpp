@@ -1,6 +1,8 @@
 #include <iostream>
 #include<stdio.h>
 #include<cmath>
+#include<vector>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -94,19 +96,184 @@ else {
 }
 }
 */
-int x,c;
-int A[x];
-int B[x];
-cin>>x;
-x=c;
-for(int i=0;i<x;i++){
-    cin>>A[i];}
-if((A[0]!=0)|(A[-1]!=0)){
-    for(int i=0;i<x;i++){
-        B[i]=A[x-(x-c)];
-        c--;
-    }
+ /*                                  re write this code j sheet 2
+int x,z,c=0;
+z=x;
+for(int a=1;a<=z;a++){
+for(int i=2;i<=x;i++){
+        if(x%i==0){
+            c++;
+        }
 
 }
+cout<<x<<" ";
+
+}*/
+/*            code k sheet 2
+int x;
+cin>> x ;
+for(int i=1;i<=x;i++){
+    if(x%i==0){
+        cout<<i<<endl;
+    }
+}*/
+/*                                                                        code N sheet 2
+string s=" ";
+int a;
+cin>>s;
+cin>>a;
+int b[a];
+for(int i=0;i<a;i++){
+    cin>>b[i];}
+
+for(int i=0;i<a;i++){
+for(int q=1;q<=b[i];q++){
+    cout<<s;
+}
+cout<<"\n";
+}*/
+/*                                                   code O sheet 2
+int a;
+cin>>a;
+for(int i=1;i<=a;i++){
+for(int q=0;q<i;q++){
+    cout<<"*";
+}
+cout<<"\n";
+}*/
+/*                                                 code p sheet 2
+int a;
+cin>>a;
+for(int i=1;i<=a;i++){
+for(int q=a;q>i;q--){
+    cout<<"*";
+}
+cout<<"\n";
+}*/                                             /* REVISSION CODE R
+int x,a,b;
+cin >>x;
+vector<int>v;
+vector<int>z;
+while(a>0&b>0){
+    cin>>a,b;
+    v.push_back(a);
+    v.push_back(b);
+}
+for(int i=0;i<(v.size());i+=2){
+    for (int q=0;q<(i+2);q+=2){
+        //sm = Maht.sum(v[i],v[i+1]);
+        for(int counter=min(v[i],v[i+1]);counter<=max(v[i],v[i+1]);counter++){
+            z.push_back(counter);
+        }
+        for(int s=0;s<=z.size();s++){
+            cout<<z[s]<<" ";
+        }
+        cout<<" sum ="<<accumulate(z.begin(),z.end(),0);
+    }
+}*/
+/*                                                                  //code s sheet 2
+int t,sum=0,a=0,b=0;
+cin>>t;
+while(t>0){
+        int sum =0;
+        cin>>a;
+        cin>>b;
+        int i=0;
+        if(a>=b){
+        for(int i =(b+1);i<a;i++){
+            if(i%2!=0){
+                sum=sum+i;
+}}}
+        else {
+            for(int i =(1+a);i<b;i++){
+            if(i%2!=0){
+                sum=sum+i;
+}}}
+        cout<<sum<<endl;
+    t--;
+}*/
+/*            code T sheet 2
+int a;
+cin>>a;
+for(int i=1;i<=a;i++){
+for(int q=a;q>i;q--){
+    cout<<" ";
+
+}
+for(int q=1;q<i*2;q++){
+    cout<<"*";
+}
+cout<<"\n";
+}*/
+   /*                                                  // code v sheet 2
+int n,t=0;
+cin>>n;
+for(int i =0;i<n;i++){
+    cout<< t+1<<" "<<t+2<<" "<<t+3<<" PUM"<<endl;
+    t+=4;
+}*/ 
+/*                                                  code w sheet 2
+int a;
+cin>>a;
+for(int i=1;i<=a;i++){
+for(int q=a;q>i;q--){
+    cout<<" ";
+
+}
+for(int q=1;q<i*2;q++){
+    cout<<"*";
+}
+cout<<"\n";
+}
+for(int i=a; i>0;i--){
+for(int w=a;w>i;w--){
+    cout<<" ";
+
+}
+for(int z =1; z<i*2 ;z++){
+    cout<<"*";
+}
+
+cout<<"\n";
+}*/                                      /* code Y sheet 2
+int n,n1=0,n2=1,sum=0;
+cin>>n;
+for(int i =1;i<=n;i++){
+  if(i==1){
+    cout<<n1<<" ";
+  }
+  else if(i==2){
+    cout<<n2<<" ";
+  }
+  else {
+  sum=n1+n2;
+  cout<<sum<<" ";
+  n1=n2;
+  n2=sum;
+  }
+}*/
+/*                               the first and second max
+int siz,max1,max2;
+cin>>siz;
+int arr[siz];
+for(int i=0;i<siz;i++){
+    cin>>arr[i];}
+if(arr[0]>arr[1]){
+    max1=arr[0];
+    max2=arr[1];}
+    else {
+        max1=arr[1];
+        max2=arr[0];}
+for(int i=2;i<siz;i++){
+    if(max1<=arr[i]){
+        max2=max1;
+        max1=arr[i];}
+        else if(max2<=arr[i]) {
+            max2=arr[i];}}
+cout<<max1<<" "<<max2<<endl;
+*/
+
+
+
 return 0;
 }
