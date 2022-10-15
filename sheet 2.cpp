@@ -4,6 +4,7 @@
 #include<vector>
 #include<bits/stdc++.h>
 using namespace std;
+
 int main()
 {
                                                                       /* code c in sheet 2
@@ -42,6 +43,15 @@ cout<<"Even: "<<coun_even<<endl;
 cout<<"Odd: "<<coun_ood<<endl;
 cout<<"Positive: "<<coun_pos<<endl;
 cout<<"Negative: "<<coun_neg<<endl;
+*/
+/*                              code d sheet 2
+
+int x=0;
+while(x!=1999){
+    cout<<"Wrong"<<endl;
+    cin>>x;
+}
+cout<<"Correct"<<endl;
 */
 
                                                    /* code E sheet 2
@@ -211,7 +221,7 @@ cin>>n;
 for(int i =0;i<n;i++){
     cout<< t+1<<" "<<t+2<<" "<<t+3<<" PUM"<<endl;
     t+=4;
-}*/ 
+}*/
 /*                                                  code w sheet 2
 int a;
 cin>>a;
@@ -272,8 +282,44 @@ for(int i=2;i<siz;i++){
             max2=arr[i];}}
 cout<<max1<<" "<<max2<<endl;
 */
-
-
+/*                                      code P in sheet 1
+int x;
+cin>>x;
+for(int i=0;i<3;i++){
+    x=x/10;
+}
+if(x%2==0){
+    cout<<"EVEN";}
+else{
+    cout<<"ODD";}
+    */                /*                   code x two intervale (revision)
+int n1,n2,n3,n4 ;
+cin>>n1;
+cin>>n2;
+cin>>n3;
+cin>>n4;
+if((n2>=n3)&(n2<=n4)&(n1<=n3))
+    cout<<min(n2,n3)<<" "<<max(n2,n3);
+else if((n3>=n1)&(n2>=n4)){
+    cout<<min(n3,n4)<<" "<<max(n3,n4);}
+else if((n3<=n1)&(n2<=n4)){
+    cout<<min(n1,n2)<<" "<<max(n1,n2);}
+else if((n3<=n1)&(n4<=n2)&(n2>=n3)){
+    cout<<min(n1,n4)<<" "<<max(n1,n4);}
+else
+    cout<<-1;
+*/ /*                         problem z sheet 2
+int k,s,counter=0;
+cin>>k;
+cin>>s;
+for(int x=0;x<=k;x++){
+    for(int y=0;y<=k;y++){
+        if(s-x-y>=0&& s-x-y<=k){
+                counter++;
+        }
+    }
+}
+cout<<counter<<endl; */
 
 return 0;
 }
