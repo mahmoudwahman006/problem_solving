@@ -2,6 +2,7 @@
 #include<cmath>
 using namespace std;
 int main(){
+    
 /*                              code watermelon
     int x;
     cin>>x;
@@ -13,6 +14,7 @@ int main(){
     else
         cout<<"NO"<<endl;
      */
+    
 /*                            code 71A way too long words
     int t,z;
     cin>>t;
@@ -30,7 +32,9 @@ int main(){
             cout<<x<<endl;
          t--;
 
-    }*/
+    }
+    */
+    
 /*                             code 231A team
     int n,counter=0;
     cin>>n;
@@ -40,7 +44,9 @@ int main(){
         if(n1+n2+n3>1)
             counter++;
             n--;}
-cout<<counter<<endl;*/
+cout<<counter<<endl;
+*/
+    
                             /* code theatre square   revsion
 
 long long m,n,a,x,y;
@@ -53,7 +59,9 @@ y=n/a;
 if(n%a!=0){
     y++;
 }
-cout<<x*y<<endl;*/
+cout<<x*y<<endl;
+*/
+    
 /*                                      code boy or girl
 string x;
 bool z = true;
@@ -72,7 +80,9 @@ if(z==false){
     else
         cout<<"CHAT WITH HER!"<<endl;
 }
-}*/
+}
+*/
+    
  /*                                      code Bit++
 int n;
 cin>>n;
@@ -86,7 +96,9 @@ while(n>0){
         coun--;}
         n--;
 }
-cout<<coun<<endl;*/
+cout<<coun<<endl;
+*/
+    
 /*                                       A.Next Round
 int n,k,coun=0;
 cin>>n>>k;
@@ -100,13 +112,15 @@ for(int i=0;i<n;i++){
 }
 cout<<coun<<endl;
 */
+    
 /*                                          A. Domino Piling
 int m,n;
 cin>>m>>n;
 if(m>1&&n>1&&m<16&&n<16){
 cout<<(m*n)/2<<endl;
 }*/
-/*                                          A. Beautiful Matrix*/
+    
+/*                                          A. Beautiful Matrix
 int arr[25];
 int p;
 for(int i=0;i<25;i++){
@@ -118,7 +132,8 @@ for(int i=0;i<25;i++){
 while(p>4){
     p-=4;}
     cout<<p<<endl;
-
+*/
+    
 return 0;
 }
 
